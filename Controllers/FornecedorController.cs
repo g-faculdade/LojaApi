@@ -60,7 +60,6 @@ namespace LojaApi.Controllers
             return Ok();
         }
 
-        // Questão 8
         [HttpGet("salario/{valor}")]
         public async Task<ActionResult<IEnumerable<Vendedor>>> GetPorSalario(decimal valor)
         {

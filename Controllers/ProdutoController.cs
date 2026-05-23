@@ -2,11 +2,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using LojaApi.Data;
 using LojaApi.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LojaApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class ProdutoController : ControllerBase
     {
         private readonly AppDbContext _context;
